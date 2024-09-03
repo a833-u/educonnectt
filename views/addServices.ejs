@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="/public/css/loginstyle.css" />
+    <link
+      rel="shortcut icon"
+      type="png"
+      href="/public/images/icon/favicon.png"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Services of <span id="educonnect"> EduConnect</span></h2>
+      <p>Add Services</p>
+
+      <form action="/addServices" method="post" enctype="multipart/form-data">
+        <div class="input-row">
+          <div class="label-input-container">
+            <label for="firstname">Service Name</label>
+            <input
+              id="firstname"
+              name="serName"
+              placeholder="First name"
+              type="text"
+            />
+          </div>
+        </div>
+        <!-- Add File -->
+
+          <label for="file-input" class="drop-container">
+            <span class="drop-title">Drop image here</span>
+            or
+            <input type="file" accept="image/*" name="imgPath" required="" id="file-input" />
+          </label>
+
+        <!-- Add File -->
+        
+        <div class="button-container">
+          <button class="animated-button" type="submit">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="arr-2"
+            viewBox="0 0 24 24"
+            >
+            <path
+            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+          <span class="text">Add Service</span>
+          <span class="circle"></span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="arr-1"
+            viewBox="0 0 24 24"
+          >
+          <path
+          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    </form>
+    </div>
+
+    <!-- <script src="/public/js/script.js"></script> -->
+  </body>
+</html>

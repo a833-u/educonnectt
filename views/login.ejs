@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/public/css/loginstyle.css">
+    <link rel="shortcut icon" type="png" href="/public/images/icon/favicon.png" />
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to <span id="educonnect">EduConnect</span></h2>
+        <p>Login to EduConnect</p>
+
+        <form id="signupForm" action="/login" method="post">
+            <div class="label-input-container">
+                <label for="email">Email Address</label>
+                <input id="email" placeholder="projectmayhem@fc.com" name="email" type="email">
+            </div>
+            <div class="label-input-container">
+                <label for="password">Password</label>
+                <input id="password" placeholder="••••••••" name="password" type="password">
+            </div>
+            <div class="button-container">
+                <button class="animated-button" type="submit"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                  <span class="text">L O G I N</span>
+                  <span class="circle"></span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            <p class="account">Don't have an account? <a href="/signup" style="color: #ffffff;">Sign-up</a></p>
+
+
+
+            <div class="divider"></div>
+<!-- 
+            <div class="social-icons-container">
+                <ul class="wrapper">
+                      <li class="icon google">
+                        <span class="tooltip">Google</span>
+                        <svg viewBox="0 0 488 512" xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor">
+                          <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
+                        </svg>
+                      </li>
+                </ul>
+              </div> -->
+
+        </form>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>

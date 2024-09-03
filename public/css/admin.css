@@ -1,0 +1,45 @@
+body{
+	font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #FA4B37, #DF2771);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.offcanvas-title{
+  background: linear-gradient(to right, #FA4B37, #DF2771);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logo img{
+    width: 120px;
+	cursor: pointer;
+	transition: all 1s;
+}
+.nav-link:hover {
+    color: #DF2771;
+    font-size: larger ;
+}
+
+.nav-item {
+	text-align: center;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.admin-body{
+	display: flex;
+	flex-direction: column;
+}
+
+  .animate__animated{
+	color: greenyellow;
+	font-weight: bolder;
+  }
+
+  
+
+  

@@ -1,0 +1,276 @@
+<%- include('./header.ejs') %>
+
+<div class="title">
+	<span>Popular Subjects on EduConnect</span>
+  </div>
+  <br /><br />
+  <div class="course">
+	<center>
+	  <div class="cbox">
+		<!-- <div class="det"><a href="subjects/jee.html"><img src="images/courses/book.png">JEE Preparation</a></div>
+	  <div class="det"><a href="subjects/gate.html"><img src="images/courses/d1.png">GATE Preparation</a></div> -->
+		<!-- <div class="det"><a href="subjects/jee.html#sample_papers"><img src="images/courses/paper.png">Sample Papers</a></div>
+	  <div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">Daily Quiz</a></div> -->
+	  </div>
+	</center>
+	<div class="cbox">
+	  <div class="det">
+		<a href="subjects/computer_courses.html"
+		  ><img src="images/courses/computer.png" />Computer Courses</a
+		>
+	  </div>
+	  <div class="det">
+		<a href="subjects/computer_courses.html#data"
+		  ><img src="images/courses/data.png" />Data Structures</a
+		>
+	  </div>
+	  <div class="det">
+		<a href="subjects/computer_courses.html#algo"
+		  ><img src="images/courses/algo.png" />Algorithm</a
+		>
+	  </div>
+	  <!-- <div class="det det-last"><a href="subjects/computer_courses.html#projects"><img src="images/courses/projects.png">Projects</a></div> -->
+	</div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="diffSection" id="about_section">
+	<center><p style="font-size: 50px; padding: 100px">About</p></center>
+	<div class="about-content">
+	  <div class="side-image">
+		<img class="sideImage" src="images/extra/e3.jpg" />
+	  </div>
+	  <div class="side-text">
+		<h2>What you think about us ?</h2>
+		<p>
+		  Education is the process of facilitating learning, or the
+		  acquisition of knowledge, skills, values, beliefs, and habits.
+		  Educational methods include teaching, training, storytelling,
+		  discussion and directed research.<br />
+		  Educational website can include websites that have games, videos or
+		  topic related resources that act as tools to enhance learning and
+		  supplement classroom teaching. These websites help make the process
+		  of learning entertaining and attractive to the student, especially
+		  in today's age. <br />Using HTML(HyperText Markup Language),
+		  CSS(Cascading Style Sheet), JavaScript, we can make learning more
+		  easier and in a interesting way.
+		</p>
+	  </div>
+	</div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <div class="diffSection" id="portfolio_section">
+	<center>
+	  <p style="font-size: 50px; padding: 100px; padding-bottom: 40px">
+		Portfolio
+	  </p>
+	</center>
+	<div class="content">
+	  <p>
+		“Education is the passport to the future, for tomorrow belongs to
+		those who prepare for it today.” “Your attitude, not your aptitude,
+		will determine your altitude.” “If you think education is expensive,
+		try ignorance.” “The only person who is educated is the one who has
+		learned how to learn …and change.”
+	  </p>
+	</div>
+  </div>
+  
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+		</div>
+		<% for (let i = 0; i < allServices.length; i++) { %>
+			<a href="/computer_courses?service=<%= encodeURIComponent(allServices[i].serName) %>">
+				<div class="s-card">
+					<img src="<%= allServices[i].serImg %>">
+					<p><%= allServices[i].serName %></p>
+				</div>
+			</a>
+		<% } %>		
+	</div>
+
+<!-- TEAM -->
+  <div class="diffSection" id="team_section">
+	<center>
+	  <p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px">
+		We're the Creators
+	  </p>
+	</center>
+	<div class="totalcard">
+	  <div class="card">
+		<center><img src="public/images/creator/Mehul.jpg" /></center>
+		<center>
+		  <div class="card-title">Mehul Mayavanshi</div>
+		  <div id="detail">
+			<p>
+			  “ You can teach a student a lesson for a day; but if you can
+			  teach him to learn by creating curiosity, he will continue the
+			  learning process as long as he lives “
+			</p>
+			<div class="duty"></div>
+			<a
+			  href="https://www.linkedin.com/in/mehul-mayavanshi-a5662a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+			  target="_blank"
+			  ><button class="btn-mehul">Follow +</button></a
+			>
+		  </div>
+		</center>
+	  </div>
+	  <div class="card">
+		<center><img src="public/images/creator/Yash.jpg" /></center>
+		<center>
+		  <div class="card-title">Yash Shah</div>
+		  <div id="detail">
+			<p>
+			  “ Real education should consist of drawing the goodness and the
+			  best out of our own students. What better books can there be
+			  than the book of humanity “
+			</p>
+			<div class="duty"></div>
+			<a
+			  href="https://www.linkedin.com/in/yash-shah-025560321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+			  target="_blank"
+			  ><button class="btn-yash">Follow +</button></a
+			>
+		  </div>
+		</center>
+	  </div>
+	  <div class="card">
+		<center><img src="public/images/creator/Sumit.jpg" /></center>
+		<center>
+		  <div class="card-title">Sumit Suthar</div>
+		  <div id="detail">
+			<p>
+			  “ You can teach a student a lesson for a day; but if you can
+			  teach him to learn by creating curiosity, he will continue the
+			  learning process as long as he lives “
+			</p>
+			<div class="duty"></div>
+			<a
+			  href="https://www.linkedin.com/in/suthar-sumit-9469a8320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+			  target="_blank"
+			  ><button class="btn-sumit">Follow +</button></a
+			>
+		  </div>
+		</center>
+	  </div>
+	  <div class="card">
+		<center><img src="public/images/creator/mansi.jpg" /></center>
+		<center>
+		  <div class="card-title">Mansi Tandel</div>
+		  <div id="detail">
+			<p>
+			  “ Real education should consist of drawing the goodness and the
+			  best out of our own students. What better books can there be
+			  than the book of humanity “
+			</p>
+			<div class="duty"></div>
+			<a
+			  href="https://www.linkedin.com/in/mansi-tandel-985418214/"
+			  target="_blank"
+			  ><button class="btn-mansi">Follow +</button></a
+			  >
+			</div>
+		</center>
+	</div>
+</div>
+</div>
+
+  <!-- CONTACT US -->
+  <div class="diffSection" id="contactus_section">
+	<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+	<div class="csec"></div>
+	<div class="back-contact">
+	  <div class="cc">
+		<form
+		  action="mailto:yash4092003@gmail.com"
+		  method="post"
+		  enctype="text/plain"
+		>
+		  <label>First Name <span class="imp">*</span></label
+		  ><label style="margin-left: 185px"
+			>Last Name <span class="imp">*</span></label
+		  ><br />
+		  <center>
+			<input
+			  type="text"
+			  name=""
+			  style="margin-right: 10px; width: 175px"
+			  required="required"
+			/><input
+			  type="text"
+			  name="lname"
+			  style="width: 175px"
+			  required="required"
+			/><br />
+		  </center>
+		  <label>Email <span class="imp">*</span></label
+		  ><br />
+		  <input
+			type="email"
+			name="mail"
+			style="width: 100%"
+			required="required"
+		  /><br />
+		  <label>Message <span class="imp">*</span></label
+		  ><br />
+		  <input
+			type="text"
+			name="message"
+			style="width: 100%"
+			required="required"
+		  /><br />
+		  <label>Additional Details</label><br />
+		  <textarea name="addtional"></textarea><br />
+		  <button type="submit" id="csubmit">Send Message</button>
+		</form>
+	  </div>
+	</div>
+  </div>
+
+  <!-- FEEDBACK -->
+  <!-- <div class="title2" id="feedBACK">
+	  <span>Give Feedback</span>
+	  <div class="shortdesc2">
+		  <p>Please share your valuable feedback to us</p>
+	  </div>
+  </div>
+
+  <div class="feedbox">
+	  <div class="feed">
+		  <form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+			  <label>Your Name</label><br>
+			  <input type="text" name="" class="fname" required="required"><br>
+			  <label>Email</label><br>
+			  <input type="email" name="mail" required="required"><br>
+			  <label>Additional Details</label><br>
+			  <textarea name="addtional"></textarea><br>
+			  <button type="submit" id="csubmit">Send Message</button>
+		  </form>
+	  </div>
+  </div> -->
+
+  <!-- Sliding Information -->
+  <marquee
+	style="
+	  background: linear-gradient(to right, #fa4b37, #df2771);
+	  margin-top: 50px;
+	"
+	direction="left"
+	onmouseover="this.stop()"
+	onmouseout="this.start()"
+	scrollamount="20"
+	><div class="marqu">
+	  “Education is the passport to the future, for tomorrow belongs to those
+	  who prepare for it today.” “Your attitude, not your aptitude, will
+	  determine your altitude.” “If you think education is expensive, try
+	  ignorance.” “The only person who is educated is the one who has learned
+	  how to learn …and change.”
+	</div></marquee
+  >
+
+<!-- FOOTER -->
+<%- include('./footer.ejs') %>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="../images/icon/favicon.png">
+	<title>Computer Science Courses on EduConnect</title>
+	<link rel="stylesheet" type="text/css" href="/public/css/subject.css">
+	<script type="text/javascript" src="public/js/script.js"></script>
+</head>
+<body>
+	
+<!-- NAVIGATION -->
+	<header>
+		<div class="nav" id="nav">
+			<div id="learned-logo">
+			<a href="/"><img src="../images/icon/logo.png" style="width: 120px;"></a></div>
+			<div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+			<ul id="list-switch">
+				<!-- <li><a href="jee.html"><img src="../images/courses/d1.png" class="icon">JEE</a></li> -->
+				<!-- <li><a href="/gate"><img src="../images/courses/paper.png" class="icon">GATE</a></li> -->
+				<!-- <li><a href="/computer_courses"><img src="../images/courses/computer.png" class="icon">Computer Courses</a></li>
+				<li><a href="#data"><img src="../images/courses/data.png" class="icon">Data Structures</a></li>
+				<li><a href="#algo"><img src="../images/courses/algo.png" class="icon">Algorithm</a></li> -->
+				<!-- <li><a href="#projects"><img src="../images/courses/projects.png" class="icon">Projects</a></li> -->
+			</ul>
+			<!-- <div class="search" id="search-switch">
+				<input type="search" placeholder="Search" class="srch"><button id="srchbtn"><img src="../images/icon/search.png"></button>
+			</div> -->
+		</div>
+	</header>
+	
+
+<!-- MAIN Heading of Page -->
+	<div class="title">
+		<span>Courses<br>on EduConnect</span>
+		<div class="shortdesc">
+			<p>Learn programming languages and concepts to prepare for a career in<br>hardware or software development</p>
+		</div>
+	</div>
+
+
+<!-- Some KeyWords related to Topic -->
+	<div class="course">
+		<div class="cbox">
+		<div class="det"><a href="#java">Java</a></div>
+		<div class="det"><a href="https://developer.android.com/">Android Development</a></div>
+		<div class="det"><a href="https://docs.oracle.com/javafx/2/get_started/fxml_tutorial.htm">FXML</a></div>
+		<div class="det"><a href="#c++">C++</a></div>
+		<div class="det"><a href="https://www.geeksforgeeks.org/introduction-of-compiler-design/">Compiler Designing</a></div>
+		<div class="det"><a href="https://www.coursera.org/specializations/game-design-and-development">Game Development</a></div>
+		<div class="det"><a href="#algo">Algorithm</a></div>
+		</div>
+		<div class="cbox">
+		<div class="det"><a href="#python">Python</a></div>
+		<div class="det"><a href="https://www.coursera.org/learn/machine-learning">Machine Learning</a></div>
+		<div class="det"><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artificial Intelligence</a></div>
+		<div class="det"><a href="https://en.wikipedia.org/wiki/Network">Networking</a></div>
+		<div class="det"><a href="https://www.kaspersky.co.in/resource-center/definitions/what-is-cyber-security">Cyber Security</a></div>
+		<div class="det"><a href="https://www.eccouncil.org/ethical-hacking/">Ethical Hacking</a></div>
+		<div class="det"><a href="#data">Data Structures</a></div>
+		</div>
+		<div class="cbox">
+		<div class="det"><a href="#html_css">HTML and CSS</a></div>
+		<div class="det"><a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd0044">Full Stack Web Development</a></div>
+		<div class="det"><a href="https://uxplanet.org/what-is-ui-vs-ux-design-and-the-difference-d9113f6612de?gi=6d9d13f4cc95">UI Designing</a></div>
+		<div class="det"><a href="https://www.adobe.com/in/products/xd.html">Adobe XD</a></div>
+		<div class="det"><a href="https://www.sciencedirect.com/topics/computer-science/hardware-design">Hardware Designing</a></div>
+		<div class="det"><a href="#javascript">JavaScript</a></div>
+		<div class="det"><a href="#html_css">Bootstrap</a></div>
+		</div>
+	</div>
+
+
+<!-- Courses Available -->
+		<!-- <div class="inbt">
+			Accelerate your career with Computer Science programs
+		</div>
+
+		<div class="ccard">
+		<center>
+			<div class="ccardbox">
+				<div class="dcard">
+					<div class="fpart"><img src="../images/courses/java-course.jpg"></div>
+					<a href="#java"><div class="spart">2 Courses <img src="../images/icon/dropdown.png"></div></a>
+				</div>
+				<div class="dcard">
+					<div class="fpart"><img src="../images/courses/python-course.png"></div>
+					<a href="#python"><div class="spart">5 Courses <img src="../images/icon/dropdown.png"></div></a>
+				</div>
+				<div class="dcard">
+					<div class="fpart"><img src="../images/courses/c-course.jpg"></div>
+					<a href="#c++"><div class="spart">3 Courses <img src="../images/icon/dropdown.png"></div></a>
+				</div>
+			</div>
+			<div class="ccardbox">
+				<div class="dcard">
+					<div class="fpart"><img src="../images/courses/web-course.jpg"></div>
+					<a href="#html_css"><div class="spart">6 Courses <img src="../images/icon/dropdown.png"></div></a>
+				</div>
+				<div class="dcard">
+					<div class="fpart"><img src="../images/courses/data-course.jpg"></div>
+					<a href="#data"><div class="spart">2 Courses <img src="../images/icon/dropdown.png"></div></a>
+				</div>
+				<div class="dcard">
+					<div class="fpart"><img src="../images/courses/algo-course.jpg"></div>
+					<a href="#algo"><div class="spart">1 Courses <img src="../images/icon/dropdown.png"></div></a>
+				</div>
+			</div>
+		</center>
+		</div> -->
+
+
+	<% Object.keys(groupedCourses).forEach(function(cName) { %>
+		<div class="title2" id="<%= cName.toLowerCase() %>">
+			<span>Start Programming with <%= cName %></span>
+			<div class="shortdesc2">
+				<p>Practice and Practice to become a good <%= cName %> programmer</p>
+			</div>
+		</div>
+		
+		<center>
+			<div class="ccardbox2">
+				<% groupedCourses[cName].forEach(function(course, index) { %>
+					<div class="dcard2"><span class="tag" >1/<%= course.cnt %></span>
+						<div class="fpart2">
+							<img src="../<%= course.cImg %>">
+							<iframe src="<%= course.cVideo %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				<% }) %>
+			</div>
+		</center>
+		<br><br>
+	<% }) %>
+	
+
+
+<br><br><br><br><br>
+
+<!-- FOOTER -->
+<%- include('./footer.ejs') %>
+
+</body>
+</html>
